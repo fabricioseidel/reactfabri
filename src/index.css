@@ -1,0 +1,129 @@
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --color-scheme: light dark;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --card-size: 350px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color-scheme: var(--color-scheme);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navegador,
+.bordes,
+.pie {
+  background-color: var(--background-color);
+  color: white;
+}
+
+.bordes {
+  border: 1px solid white;
+  border-radius: var(--border-radius);
+  padding-bottom: 40px;
+}
+
+.sep {
+  gap: 10px;
+}
+
+.separador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  margin: 20px;
+  width: var(--card-size);
+  height: var(--card-size);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-title,
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #000;
+}
+
+.img-fluid {
+  border-radius: 15px;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 3px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn i {
+  margin-left: 5px;
+  font-size: 1rem;
+}
