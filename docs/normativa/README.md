@@ -6,6 +6,9 @@ Textos oficiales de los que salen todas las reglas, tasas, topes, plazos y colum
 Al agregar un archivo, registrar aquí su origen, la fecha de descarga y su SHA-256
 (`sha256sum archivo.pdf`), para poder demostrar contra qué versión del texto se implementó.
 
+Los archivos se agregan a mano: el 10-11-2026 ambos sitios rechazaron la descarga automática
+desde el entorno de desarrollo en la nube (Diario Oficial respondió 403 y BCN respondió 401).
+
 | Norma | Archivo | Origen oficial | Descargado | SHA-256 |
 |---|---|---|---|---|
 | Res. Ex. N°38/2024 DT | pendiente | https://www.diariooficial.interior.gob.cl/publicaciones/2024/05/09/43846/01/2489163.pdf | — | — |
